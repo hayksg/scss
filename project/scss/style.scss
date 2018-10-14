@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+@import 'media';
+@import 'reuseables';
+
+@include google-font('Charmonman');
+
+body {
+  padding-top: 20px;
+  background-color: darken($bg-color, 20%);
+  color: $txt-color;
+
+  hr {
+    background-color: $txt-color;
+  }
+
+  a {
+    color: orange;
+    @include app-transition(color, 320ms);
+
+    &:hover {
+      color: darken(orange, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+.warning {
+  @include alert(20, orange, 2, red);
+}
+
+.letter {
+  font-family: 'Charmonman', cursive;
+  font-size: 20px;
+}
+
+.foo {
+  @extend %my-class !optional;
+}
+
+$contrast: 'medium';
+
+.bar {
+  @if ($contrast == 'high') {
+    color: #000;
+  } @else if ($contrast == 'medium') {
+    color: #888;
+  } @else {
+    color: #fff;
+  }
+}
+
+@for $i from 1 through 5 {
+  .width-#{$i} {
+    width: $i * 10%;
+  }
+}
+
+$users: ['joe', 'anna', 'emma'];
+
+@each $user in $users {
+  #{$user}-image {
+    background-image: url('img/#{$user}.png');
+  }
+}
+
+$j: 10;
+
+@while ($j >= 0) {
+
+  .height-#{$j} {
+    height: $j * 10px;
+  }
+
+  $j: $j - 1;
+}

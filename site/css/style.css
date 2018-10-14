@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Charmonman);
+@media only screen and (max-width: 1000px) and (min-width: 500px) {
+  .box {
+    background-color: purple;
+    padding: 20px; } }
+
+.foo {
+  background-color: green;
+  padding: 20px;
+  margin: 20px 0; }
+
+body {
+  padding-top: 20px;
+  background-color: #1a334d;
+  color: #fff; }
+  body hr {
+    background-color: #fff; }
+  body a {
+    color: orange;
+    transition: color, 320ms; }
+    body a:hover {
+      color: #cc8400;
+      text-decoration: none; }
+
+.warning {
+  padding: 20px;
+  background-color: orange;
+  border: 2px solid red; }
+
+.letter {
+  font-family: 'Charmonman', cursive;
+  font-size: 20px; }
+
+.bar {
+  color: #888; }
+
+.width-1 {
+  width: 10%; }
+
+.width-2 {
+  width: 20%; }
+
+.width-3 {
+  width: 30%; }
+
+.width-4 {
+  width: 40%; }
+
+.width-5 {
+  width: 50%; }
+
+joe-image {
+  background-image: url("img/joe.png"); }
+
+anna-image {
+  background-image: url("img/anna.png"); }
+
+emma-image {
+  background-image: url("img/emma.png"); }
+
+.height-10 {
+  height: 100px; }
+
+.height-9 {
+  height: 90px; }
+
+.height-8 {
+  height: 80px; }
+
+.height-7 {
+  height: 70px; }
+
+.height-6 {
+  height: 60px; }
+
+.height-5 {
+  height: 50px; }
+
+.height-4 {
+  height: 40px; }
+
+.height-3 {
+  height: 30px; }
+
+.height-2 {
+  height: 20px; }
+
+.height-1 {
+  height: 10px; }
+
+.height-0 {
+  height: 0px; }

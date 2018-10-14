@@ -1,0 +1,14 @@
+@mixin app-transition($attr, $time) {
+  transition: $attr, $time;
+}
+
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+@mixin alert($padding, $bg-color: red, $border-size: 5, $border-color: blue) {
+  padding: #{$padding}px;
+  background-color: $bg-color;
+  border: #{$border-size}px solid $border-color;
+}
